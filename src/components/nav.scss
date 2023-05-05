@@ -1,0 +1,19 @@
+@import '../variables.scss';
+
+.navigation {
+  background: $cream;
+}
+
+.logo-wrapper {
+  h1 {
+    font-size: 3rem;
+    font-family: $sans;
+
+    span {
+      display: block;
+      font-size: 2rem;
+      font-family: $sans;
+      font-weight: 300;
+    }
+  }
+}

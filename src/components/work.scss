@@ -1,0 +1,21 @@
+@import '../variables';
+
+#work {
+  h2 {
+    font-family: $sans;
+    font-weight: 300;
+    font-size: 4rem;
+    margin: 0;
+
+    &.subheading {
+      font-size: 1.5rem;
+      font-family: $serif;
+    }
+  }
+
+  .work-item {
+    height: 20rem;
+    background: red;
+  }
+}
+

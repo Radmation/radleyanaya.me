@@ -1,0 +1,40 @@
+@import '../variables.scss';
+
+#hero {
+  padding: 18rem 0;
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0;
+
+    &.subheading {
+      font-size: 1.5rem;
+      font-family: $serif;
+    }
+  }
+
+  .animated {
+    animation: fadeInOut 3s;
+    font-weight: bold;
+    position: relative;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
