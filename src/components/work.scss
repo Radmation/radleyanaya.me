@@ -1,21 +1,58 @@
 @import '../variables';
 
-#work {
-  h2 {
-    font-family: $sans;
-    font-weight: 300;
-    font-size: 4rem;
-    margin: 0;
+.work-item {
+  font-size: 125%;
+  margin-bottom: 5rem;
 
-    &.subheading {
-      font-size: 1.5rem;
-      font-family: $serif;
+  .project-title {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0.5rem;
+      height: 100%;
+      background: $blue;
+    }
+
+    h3 {
+      margin-bottom: 0;
+    }
+
+    h4 {
+      margin-bottom: 0;
+      margin-top: .5rem;
+      font-weight: 300;
     }
   }
 
-  .work-item {
-    height: 20rem;
-    background: red;
+  .featured-project-image {
+    margin-top: 2rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 
+.work-grid  {
+  font-size: 125%;
+
+  p {
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

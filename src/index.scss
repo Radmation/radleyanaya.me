@@ -11,7 +11,7 @@
 body {
   margin: 0;
   font-family: $sans;
-  background: $cream;
+  background: $white;
   color: $black;
 }
 
@@ -21,10 +21,6 @@ strong {
 
 .text-bold {
   font-weight: bold;
-}
-
-.padded-section {
-  padding: $paddingBase 0;
 }
 
 .background-blue {
@@ -40,5 +36,9 @@ strong {
   width: 16rem;
   height: 2rem;
   background: $blue;
+
+  &.centered {
+    margin: 2rem auto;
+  }
 }
 

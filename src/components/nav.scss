@@ -1,19 +1,77 @@
 @import '../variables.scss';
 
 .navigation {
-  background: $cream;
+  padding: 1rem 0;
 }
 
 .logo-wrapper {
   h1 {
     font-size: 3rem;
     font-family: $sans;
+    display: inline-block;
+    position: relative;
+    padding-left: 2rem;
+    margin-left: 1rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 0.5rem;
+      height: 50%;
+      background: $blue;
+      display: block;
+      transition: .3s;
+    }
 
     span {
+      position: relative;
+      top: -25px;
+      opacity: 0;
+      transition: .3s;
       display: block;
       font-size: 2rem;
       font-family: $sans;
       font-weight: 300;
+    }
+  }
+
+  h1:hover {
+    &:before {
+      height: 100%;
+    }
+
+    span {
+      opacity: 1;
+      top: 0;
+    }
+  }
+}
+
+.nav-wrapper {
+  text-align: right;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      padding: 0 .5rem;
+
+      a {
+        display: block;
+        padding: .5rem;
+        text-decoration: none;
+        color: $black;
+        font-weight: bold;
+        transition: .3s all;
+
+        &:hover {
+          color: $blue;
+        }
+      }
     }
   }
 }
