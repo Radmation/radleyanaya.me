@@ -2,7 +2,7 @@ import React, { FC, useEffect, useState } from "react";
 import './hero.scss';
 
 const Hero: FC = () => {
-  const jobWords = ['web developer.', 'software engineer.', 'blockchain developer.', 'front-end developer.', 'back-end engineer.'];
+  const jobWords = ['web developer.', 'software engineer.', 'blockchain developer.', 'front-end developer.', 'back-end developer.'];
   const funWords = ['roller skater.', 'pickleball\'er.', 'gamer.', 'gardener.', 'musician.'];
   const [count, setCount] = useState(0);
   const [currentWord, setCurrentWord] = useState('<span class="animated">'+jobWords[jobWords.length - 1]+'</span>');

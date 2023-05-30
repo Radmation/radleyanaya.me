@@ -26,6 +26,12 @@
   }
 }
 
+@media screen and (max-width: 1170px) {
+  #hero {
+    padding: 12rem 0;
+  }
+}
+
 @keyframes fadeInOut {
   0% {
     opacity: 0;
