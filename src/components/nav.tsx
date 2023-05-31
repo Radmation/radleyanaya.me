@@ -12,7 +12,7 @@ const Nav: FC = () => {
     <>
       <nav className="navigation">
         <div className="container-fluid">
-          <div className="row">
+          <div className="row between-xs">
             <div className="col-sm-12 col-md-6">
               <div className="logo-wrapper">
                 <h1>Radley Anaya<span>Web Developer</span></h1>
@@ -37,6 +37,7 @@ const Nav: FC = () => {
                         <p className="heading"><strong>Looking for something?</strong></p>
                         <ul>
                           <li><a href="/Resume_Radley_May_2023.pdf" target="_blank">📄 Resume</a></li>
+                          <li><a href="mailto:radmation@gmail.com" target="_blank">📧 Email</a></li>
                         </ul>
                       </div>
                     </div>

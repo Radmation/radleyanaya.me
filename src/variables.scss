@@ -1,3 +1,4 @@
+// Fonts.
 $sans: 'Josefin Sans', sans-serif;
 $serif: 'Libre Baskerville', serif;
 
@@ -6,3 +7,22 @@ $blue: #2274A5;
 $cream: #E7DFC6;
 $white: #E9F1F7;
 $black: #131B23;
+
+// Animations.
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

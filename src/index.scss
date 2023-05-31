@@ -23,6 +23,10 @@ strong {
   font-weight: bold;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .background-blue {
   background-color: $blue;
 }
@@ -42,3 +46,14 @@ strong {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .divider {
+    height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .divider {
+    height: 1rem;
+  }
+}

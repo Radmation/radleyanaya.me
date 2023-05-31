@@ -8,15 +8,14 @@ const Work: FC = () => {
       <Heading heading="MOST RECENT PROJECT" />
       <div className="work-item container">
         <div className="row">
-          <div className="col-xs-6">
+          <div className="col-xs-12 col-md-6">
             <div className="project-title">
               <h3>AWESIMO</h3>
               <h4>A Web3/Web2 NFT Marketplace, bringing ticket stubs to blockchain.</h4>
             </div>
             <p><strong>Role:</strong> Senior Software Engineer - Full Stack</p>
-            <p><strong>Check it out in the wild:</strong> <a href="https://awesimo.io" target="_blank">Awesimo.io</a></p>
           </div>
-          <div className="col-xs-3">
+          <div className="col-xs-6 col-md-3">
             <p><strong>Technologies Used:</strong></p>
             <ul>
               <li>Node.js</li>
@@ -24,20 +23,25 @@ const Work: FC = () => {
               <li>DynamoDB</li>
               <li>GraphQL</li>
               <li>Next.js</li>
-              <li>Ether.js</li>
               <li>Typescript</li>
             </ul>
           </div>
-          <div className="col-xs-3">
+          <div className="col-xs-6 col-md-3">
             <p><strong>Cool stuff:</strong></p>
             <ul>
               <li>Web3 Webhooks</li>
               <li>IPFS - Pinata</li>
               <li>Blockchain - Polygon</li>
+              <li>Ether.js</li>
               <li>Serverless</li>
               <li>SQS</li>
               <li>S3</li>
             </ul>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-xs-12">
+            <p className="text-center"><strong>Check it out in the wild:</strong> <a href="https://awesimo.io" target="_blank">Awesimo.io</a></p>
           </div>
         </div>
         <div className="row center-xs">
