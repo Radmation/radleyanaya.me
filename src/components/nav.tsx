@@ -13,12 +13,12 @@ const Nav: FC = () => {
       <nav className="navigation">
         <div className="container-fluid">
           <div className="row between-xs">
-            <div className="col-sm-12 col-md-6">
+            <div className="col-xs-8">
               <div className="logo-wrapper">
                 <h1>Radley Anaya<span>Web Developer</span></h1>
               </div>
             </div>
-            <div className="col-sm-12 col-md-6">
+            <div className="col-xs-4">
               <div className={isActive ? 'nav-wrapper active': 'nav-wrapper'}  onClick={toggleNavigation}>
                 <div className="menu-button" role="button">
                   <span></span>
