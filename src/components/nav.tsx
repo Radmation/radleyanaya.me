@@ -36,7 +36,7 @@ const Nav: FC = () => {
                       <div className="col-sm-12 col-lg-4">
                         <p className="heading"><strong>Looking for something?</strong></p>
                         <ul>
-                          <li><a href="/Resume_Radley_June_2023.pdf" target="_blank">📄 Resume</a></li>
+                          <li><a href="/Resume-Radley-July-2023.pdf" target="_blank">📄 Resume</a></li>
                           <li><a href="mailto:radmation@gmail.com" target="_blank">📧 Email</a></li>
                         </ul>
                       </div>
