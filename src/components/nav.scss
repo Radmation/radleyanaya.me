@@ -1,0 +1,363 @@
+@import '../variables.scss';
+
+.navigation {
+  padding: 1rem 0;
+  background-color: $white;
+}
+
+.logo-wrapper {
+  h1 {
+    font-size: 3rem;
+    font-family: $sans;
+    display: inline-block;
+    position: relative;
+    padding-left: 2rem;
+    margin-left: 1rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 0.5rem;
+      height: 50%;
+      background: $blue;
+      display: block;
+      transition: .3s;
+    }
+
+    span {
+      position: relative;
+      top: -25px;
+      opacity: 0;
+      transition: .3s;
+      display: block;
+      font-size: 2rem;
+      font-family: $sans;
+      font-weight: 300;
+    }
+  }
+
+  h1:hover {
+    &:before {
+      height: 100%;
+    }
+
+    span {
+      opacity: 1;
+      top: 0;
+    }
+  }
+}
+
+.nav-wrapper {
+  text-align: right;
+
+  .menu-button {
+    padding: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+    right: 0;
+
+    span {
+      display: block;
+      height: 10px;
+      margin: 0 auto 10px auto;
+      background: $black;
+      transition: .3s all;
+      position: relative;
+
+      &:first-of-type {
+        width: 6rem;
+      }
+
+      &:nth-of-type(2) {
+        width: 8rem;
+      }
+
+      &:last-of-type {
+        width: 6rem;
+        margin-bottom: 0;
+      }
+    }
+
+    &:hover {
+      span {
+        &:first-of-type {
+          width: 8rem;
+        }
+
+        &:last-of-type {
+          width: 8rem;
+        }
+      }
+    }
+  }
+
+  .link-wrapper {
+    overflow: scroll;
+    background: $cream;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 200%;
+    z-index: 1;
+    transition: .3s clip-path;
+    clip-path: circle(0 at center);
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .bigger {
+      font-size: 125%;
+    }
+
+    .heading {
+      padding-left: 1.5rem;
+      position: relative;
+
+      &:before {
+        content: '';
+        display: block;
+        height: 2rem;
+        width: 0.5rem;
+        background: $blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    p, ul {
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 1.5rem;
+
+      li {
+        margin-bottom: 1rem;
+
+        a {
+          display: block;
+          text-decoration: none;
+          color: $black;
+          transition: .3s all;
+
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+
+  &.active {
+    .menu-button {
+      span {
+        &:first-of-type {
+          rotate: 45deg;
+          width: 4rem;
+          left: 2.1rem;
+        }
+
+        &:nth-of-type(2) {
+          width: 7rem;
+        }
+
+        &:last-of-type {
+          rotate: -45deg;
+          width: 4rem;
+          left: 2.1rem;
+        }
+      }
+    }
+
+    .link-wrapper {
+      clip-path: circle(60% at 60% 50%);
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .nav-wrapper {
+    .link-wrapper {
+      padding-top: 8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .nav-wrapper.active {
+    .link-wrapper {
+      clip-path: circle(70% at 60% 50%);
+    }
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .logo-wrapper {
+    h1 {
+      font-size: 2rem;
+      padding-left: 1.5rem;
+      margin-left: 0;
+
+      span {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .nav-wrapper {
+    .link-wrapper {
+      padding-top: 4rem;
+      font-size: 160%;
+    }
+
+    .menu-button {
+      span {
+        height: 6px;
+        margin-bottom: 0;
+
+        &:first-of-type {
+          top: -0.55rem;
+          width: 4rem;
+        }
+
+        &:nth-of-type(2) {
+          width: 6rem;
+        }
+
+        &:last-of-type {
+          top: 0.55rem;
+          width: 4rem;
+          margin-bottom: 0;
+        }
+      }
+
+      &:hover span {
+        &:first-of-type {
+          width: 6rem;
+        }
+
+        &:last-of-type {
+          width: 6rem;
+        }
+      }
+    }
+
+    &.active .menu-button span {
+      &:first-of-type {
+        rotate: 45deg;
+        width: 2.5rem;
+        top: -.4rem;
+      }
+
+      &:nth-of-type(2) {
+        width: 6rem;
+      }
+
+      &:last-of-type {
+        rotate: -45deg;
+        width: 2.5rem;
+        top: .4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo-wrapper {
+    h1 {
+      font-size: 1.5rem;
+
+      span {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .nav-wrapper {
+    .menu-button {
+      padding: 1.5rem;
+    }
+
+    .menu-button {
+      height: 6px;
+      margin-bottom: 0;
+
+      span {
+        height: 6px;
+        margin-bottom: 0;
+
+        &:first-of-type {
+          top: -0.55rem;
+          width: 2.5rem;
+        }
+
+        &:nth-of-type(2) {
+          width: 4rem;
+        }
+
+        &:last-of-type {
+          top: 0.55rem;
+          width: 2.5rem;
+          margin-bottom: 0;
+        }
+      }
+
+      &:hover span {
+        &:first-of-type {
+          width: 4rem;
+        }
+
+        &:last-of-type {
+          width: 4rem;
+        }
+      }
+    }
+
+    &.active .menu-button span {
+      &:first-of-type {
+        rotate: 45deg;
+        width: 2rem;
+        top: -.25rem;
+        left: 1.5rem;
+      }
+
+      &:nth-of-type(2) {
+        width: 4rem;
+      }
+
+      &:last-of-type {
+        rotate: -45deg;
+        width: 2rem;
+        top: .2rem;
+        left: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .logo-wrapper {
+    h1 {
+      font-size: 1.25rem;
+
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .nav-wrapper {
+    .menu-button {
+      padding: 1.5rem 0;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import '../variables.scss';
+
+#hero {
+  padding: 18rem 0;
+  overflow: hidden;
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+    max-width: 100%;
+
+    .whats-up {
+      font-size: 150%;
+    }
+
+    &.subheading {
+      font-size: 1.5rem;
+      font-family: $serif;
+    }
+  }
+
+  .animated {
+    animation: fadeInOut 3s;
+    font-weight: bold;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  #hero {
+    padding: 12rem 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #hero {
+    padding: 8rem 0;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #hero {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #hero {
+    h2 {
+      font-size: 1.75rem;
+    }
+  }
+}
